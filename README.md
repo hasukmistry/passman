@@ -2,6 +2,8 @@
 
 Source code for : https://github.com/hasukmistry/password-manager
 
+:star: Star us on GitHub — it helps!
+
 ## Installation
 - Clone this repo.
 - [Create .env file](#create-env-file)
