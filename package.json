@@ -43,7 +43,8 @@
     "request": "^2.88.2",
     "source-map-support": "^0.5.19",
     "sqlite3": "^4.2.0",
-    "vue-router": "^3.3.2"
+    "vue-router": "^3.3.2",
+    "websocket-extensions": ">=0.1.4"
   },
   "build": {
     "asar": true,
