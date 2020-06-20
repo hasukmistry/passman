@@ -1,0 +1,92 @@
+{
+  "name": "passman",
+  "version": "1.0.0",
+  "description": "Password Manager",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "build": "electron-webpack && electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Hasmukh Mistry",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0",
+    "electron-webpack": "^2.8.2",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "asar": "^3.0.3",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "crypto-js": "^4.0.0",
+    "crypto-random-string": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "futures": "^2.3.3",
+    "moment": "^2.26.0",
+    "otplib": "^12.0.1",
+    "qrcode": "^1.4.4",
+    "request": "^2.88.2",
+    "source-map-support": "^0.5.19",
+    "sqlite3": "^4.2.0",
+    "vue-router": "^3.3.2"
+  },
+  "build": {
+    "asar": true,
+    "files": [
+      "**/*",
+      "build/icon.*"
+    ],
+    "extraResources": [
+      {
+        "from": "resources"
+      },
+      {
+        "from": "static"
+      }
+    ],
+    "asarUnpack": [
+      "./node_modules/sqlite3"
+    ],
+    "linux": {
+      "target": [
+        "deb"
+      ]
+    },
+    "deb": {
+      "depends": [
+        "gconf2",
+        "gconf-service",
+        "libnotify4",
+        "libappindicator1",
+        "libxtst6",
+        "libnss3",
+        "outguess"
+      ]
+    },
+    "win": {
+      "target": [
+        "msi"
+      ]
+    }
+  },
+  "electronWebpack": {
+    "renderer": {
+      "template": "src/template.html"
+    }
+  }
+}
