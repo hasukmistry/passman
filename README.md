@@ -8,7 +8,7 @@ Source code for : https://github.com/hasukmistry/password-manager
 - [Install Dependencies](#install-dependencies)
 
 ## Create .env file
-Create .env file in project location. Values can be random string or key with your choice. Have a look at below content,
+Create .env file in project location. Values can be random string or key with your choice. Have a look at below content:
 ```
 PASSWORD_KEY={PASSWORD_KEY_OF_YOUR_CHOICE}
 SECURITY_KEY=${PUBLIC_KEY_OF_YOUR_CHOICE}
