@@ -13,7 +13,7 @@ const platform = require('../../utils/platform')
 const currentPlatform = platform.get
 
 let uploadLocation;
-// just show we display correct path to user when user is in windows machine
+// to display correct path to user when user is in windows machine
 if (currentPlatform === 'WINDOWS') {
     uploadLocation = `${homeDir}\\passman\\`;
 } else {
