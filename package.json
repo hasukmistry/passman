@@ -45,7 +45,7 @@
     "request": "^2.88.2",
     "selfsigned": "^1.10.8",
     "source-map-support": "^0.5.19",
-    "sqlite3": "^5.0.3",
+    "sqlite3": "^5.1.5",
     "vue-router": "^3.4.3",
     "websocket-extensions": ">=0.1.4"
   },
