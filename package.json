@@ -32,7 +32,7 @@
   "dependencies": {
     "asar": "^3.0.3",
     "axios": "^0.34.0",
-    "body-parser": "^1.20.8",
+    "body-parser": "^1.20.9",
     "crypto-js": "^4.2.0",
     "crypto-random-string": "^3.3.0",
     "dotenv": "^8.2.0",
